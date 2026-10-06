@@ -295,51 +295,41 @@
       </div>
     </section>
 
-    <!-- ================= Newsletter ================= -->
+    <!-- ================= 支持 / 跟进 ================= -->
     <section aria-labelledby="wb-cta-title">
       <div class="wb-news">
         <div>
-          <p class="wb-kicker">THE DISPATCH</p>
+          <p class="wb-kicker">OPEN SOURCE</p>
           <h2 id="wb-cta-title">这本指南，<em>也可以由你继续写下去。</em></h2>
           <p>
-            内容基于官方指南改写，遵循开放协作精神。版权与署名、同源仓库、以及你希望补充的每一条实践，都在这里。
+            内容基于官方指南改写，遵循开放协作精神。仓库每周监测官方文档变更，发现差异会自动开 Issue；
+            版权勘误、内容补充都可以提 PR。
           </p>
         </div>
-        <div class="wb-news__form">
-          <div v-if="subscribed" class="wb-news__done">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
-            <p>已收到。本指南的更新会随仓库同步，无需订阅。</p>
-          </div>
-          <template v-else>
-            <div class="wb-news__row">
-              <label class="wb-news__field">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
-                <input v-model="email" type="email" placeholder="you@example.com" aria-label="邮箱地址" @keyup.enter="subscribe" />
-              </label>
-              <button class="wb-news__submit" type="button" @click="subscribe">
-                订阅更新
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-              </button>
-            </div>
-            <p class="wb-news__note">
-              也可以直接前往
-              <a href="https://github.com/sil1021yan-ai/workbuddy-guide" target="_blank" rel="noreferrer" style="color: #fbe6d2; text-decoration: underline;">GitHub 仓库</a>
-              提 Issue 或 PR。
-            </p>
-          </template>
+        <div class="wb-news__actions">
+          <a
+            class="wb-news__btn wb-news__btn--solid"
+            href="https://github.com/sil1021yan-ai/workbuddy-guide"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8L3.5 9.2l5.9-.9z" /></svg>
+            Star 仓库
+          </a>
+          <a
+            class="wb-news__btn"
+            href="https://github.com/sil1021yan-ai/workbuddy-guide/stargazers"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z" /><circle cx="12" cy="12" r="2.8" /></svg>
+            Watch 更新
+          </a>
+          <p class="wb-news__note">
+            Star 或 Watch 后，仓库有新提交与新 Issue 时你会收到 GitHub 通知。
+          </p>
         </div>
       </div>
     </section>
   </main>
 </template>
-
-<script setup lang="ts">
-import { ref } from "vue";
-
-const email = ref("");
-const subscribed = ref(false);
-
-function subscribe() {
-  if (email.value.trim()) subscribed.value = true;
-}
-</script>

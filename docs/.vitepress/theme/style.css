@@ -1032,117 +1032,84 @@
   max-width: 30rem;
 }
 
-.wb-news__form {
+.wb-news__actions {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.wb-news__row {
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  sm-direction: row;
-}
-
-@media (min-width: 480px) {
-  .wb-news__row {
-    flex-direction: row;
-  }
-}
-
-.wb-news__field {
-  flex: 1;
-  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
   align-items: center;
-  gap: 0.6rem;
-  border: 1px solid rgba(246, 241, 231, 0.4);
-  background: rgba(246, 241, 231, 0.1);
-  padding: 0.85rem 1rem;
-  border-radius: 3px;
 }
 
-.wb-news__field svg {
-  width: 16px;
-  height: 16px;
-  color: rgba(246, 241, 231, 0.7);
-  flex: none;
-}
-
-.wb-news__field input {
-  flex: 1;
-  min-width: 0;
-  background: transparent;
-  border: none;
-  outline: none;
-  font-family: var(--wb-sans);
-  font-size: 0.92rem;
-  color: #f6f1e7;
-}
-
-.wb-news__field input::placeholder {
-  color: rgba(246, 241, 231, 0.5);
-}
-
-.wb-news__field input:focus {
-  outline: none;
-}
-
-.wb-news__submit {
+.wb-news__btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
-  background: #2a2018;
+  border: 1px solid rgba(246, 241, 231, 0.45);
+  background: transparent;
   color: #f6f1e7;
-  border: none;
   border-radius: 3px;
   padding: 0.9rem 1.5rem;
   font-family: var(--wb-sans);
   font-size: 0.92rem;
   font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
-  transition: background 0.18s ease;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
 }
 
-.wb-news__submit:hover {
-  background: #1c150e;
-}
-
-.wb-news__submit svg {
-  width: 15px;
-  height: 15px;
-  transition: transform 0.18s ease;
-}
-
-.wb-news__submit:hover svg {
-  transform: translateX(3px);
-}
-
-.wb-news__note {
-  font-size: 0.78rem;
-  color: rgba(246, 241, 231, 0.62);
-  margin: 0;
-}
-
-.wb-news__done {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  border: 1px solid rgba(246, 241, 231, 0.4);
-  background: rgba(246, 241, 231, 0.1);
-  padding: 1.1rem 1.2rem;
-  border-radius: 3px;
-}
-
-.wb-news__done svg {
-  width: 22px;
-  height: 22px;
+.wb-news__btn svg {
+  width: 16px;
+  height: 16px;
   flex: none;
 }
 
-.wb-news__done p {
-  font-size: 0.92rem;
+.wb-news__btn:hover {
+  background: #f6f1e7;
+  color: var(--wb-accent-2);
+  border-color: #f6f1e7;
+  text-decoration: none;
+}
+
+/* 压过默认主题的 .vp-doc a（0,1,1），否则按钮文字会被染成品牌色 */
+.wb-home a.wb-news__btn,
+.wb-home a.wb-news__btn:visited {
+  color: #f6f1e7;
+  text-decoration: none;
+}
+
+.wb-home a.wb-news__btn:hover {
+  color: var(--wb-accent-2);
+  text-decoration: none;
+}
+
+.wb-home a.wb-news__btn--solid,
+.wb-home a.wb-news__btn--solid:visited {
+  background: #2a2018;
+  border-color: #2a2018;
+  color: #f6f1e7;
+}
+
+.wb-home a.wb-news__btn--solid:hover {
+  background: #1c150e;
+  border-color: #1c150e;
+  color: #f6f1e7;
+}
+
+.wb-news__btn--solid {
+  background: #2a2018;
+  border-color: #2a2018;
+  color: #f6f1e7;
+}
+
+.wb-news__btn--solid:hover {
+  background: #1c150e;
+  border-color: #1c150e;
+  color: #f6f1e7;
+}
+
+.wb-news__note {
+  flex-basis: 100%;
+  font-size: 0.78rem;
+  color: rgba(246, 241, 231, 0.62);
   margin: 0;
 }
 
