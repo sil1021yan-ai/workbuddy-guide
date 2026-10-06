@@ -356,6 +356,12 @@
   font-family: var(--wb-sans);
 }
 
+/* VitePress 默认主题的 `.vp-doc a` 特异度为 (0,1,1)，会覆盖按钮文字色。
+   这里用 `.wb-home a.wb-btn` 提到 (0,2,1)，确保按钮配色不被染色。 */
+.wb-home a.wb-btn {
+  text-decoration: none;
+}
+
 .wb-btn svg {
   width: 16px;
   height: 16px;
@@ -366,26 +372,28 @@
   transform: translateX(3px);
 }
 
-.wb-btn--primary {
+.wb-home a.wb-btn--primary,
+.wb-home a.wb-btn--primary:visited {
   background: var(--wb-accent);
-  color: var(--wb-bg);
+  color: #f6f1e7;
 }
 
-.wb-btn--primary:hover {
+.wb-home a.wb-btn--primary:hover {
   background: var(--wb-accent-2);
-  color: var(--wb-bg);
+  color: #f6f1e7;
   text-decoration: none;
 }
 
-.wb-btn--ghost {
+.wb-home a.wb-btn--ghost,
+.wb-home a.wb-btn--ghost:visited {
   background: transparent;
   color: var(--wb-ink);
   border-color: var(--wb-border);
 }
 
-.wb-btn--ghost:hover {
+.wb-home a.wb-btn--ghost:hover {
   background: var(--wb-ink);
-  color: var(--wb-bg);
+  color: #f6f1e7;
   border-color: var(--wb-ink);
   text-decoration: none;
 }
@@ -586,9 +594,21 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* 同上：压过 `.vp-doc a` 的品牌色，避免卡片文字被染橙 */
+.wb-home a.wb-card,
+.wb-home a.wb-card:visited {
+  color: var(--wb-ink);
+  text-decoration: none;
+}
+
 .wb-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--wb-shadow);
+  text-decoration: none;
+}
+
+.wb-home a.wb-card:hover {
+  color: var(--wb-ink);
   text-decoration: none;
 }
 
@@ -722,9 +742,20 @@
   transition: all 0.18s ease;
 }
 
+.wb-home a.wb-task,
+.wb-home a.wb-task:visited {
+  color: var(--wb-ink);
+  text-decoration: none;
+}
+
 .wb-task:hover {
   background: var(--wb-ink);
   border-color: var(--wb-ink);
+  text-decoration: none;
+}
+
+.wb-home a.wb-task:hover {
+  color: var(--wb-bg);
   text-decoration: none;
 }
 
