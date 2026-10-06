@@ -611,7 +611,12 @@
   margin: 0;
 }
 
-.wb-steps li {
+/* 固定最小高度 + flex 撑满，保证四格边框等高 */
+.wb-step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 150px;
   background: transparent;
   border: var(--wb-line) solid #fff;
   border-radius: 0;
@@ -619,33 +624,34 @@
   transition: all 0.15s ease;
 }
 
-.wb-steps li:hover {
+.wb-step:hover {
   background: #fff;
 }
 
-.wb-steps li:hover * {
+.wb-step:hover * {
   color: var(--wb-ink);
 }
 
-.wb-steps b {
+.wb-step b {
   display: block;
   font-family: var(--wb-mono);
   font-size: 1.7rem;
   color: var(--wb-accent);
-  margin-bottom: 0.5rem;
+  margin-bottom: auto;
   font-weight: 900;
 }
 
-.wb-steps strong {
+.wb-step strong {
   display: block;
   color: #fff;
   font-size: 1rem;
   font-weight: 800;
   margin-bottom: 0.3rem;
+  margin-top: 1.2rem;
   letter-spacing: 0.02em;
 }
 
-.wb-steps span {
+.wb-step span {
   color: #b5b5b5;
   font-size: 0.85rem;
 }

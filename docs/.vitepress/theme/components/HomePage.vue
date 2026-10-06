@@ -152,12 +152,12 @@
           <h2 id="wb-system-title">一次成功，不该只发生一次。</h2>
           <p>本指南真正关心的不是“AI 会什么”，而是如何把一个结果沉淀成稳定、可协作、可复用的工作系统。</p>
         </div>
-        <ol class="wb-steps">
-          <li><b>01</b><strong>TASK</strong><span>完成一个真实任务</span></li>
-          <li><b>02</b><strong>CASE</strong><span>复盘成可复现案例</span></li>
-          <li><b>03</b><strong>WORKFLOW</strong><span>沉淀 Skill 与自动化</span></li>
-          <li><b>04</b><strong>AI TEAM</strong><span>组合成协作团队</span></li>
-        </ol>
+        <div class="wb-steps">
+          <div class="wb-step"><b>01</b><strong>TASK</strong><span>完成一个真实任务</span></div>
+          <div class="wb-step"><b>02</b><strong>CASE</strong><span>复盘成可复现案例</span></div>
+          <div class="wb-step"><b>03</b><strong>WORKFLOW</strong><span>沉淀 Skill 与自动化</span></div>
+          <div class="wb-step"><b>04</b><strong>AI TEAM</strong><span>组合成协作团队</span></div>
+        </div>
       </div>
     </section>
 
