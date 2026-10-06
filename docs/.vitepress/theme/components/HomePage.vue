@@ -15,7 +15,7 @@
           <div class="wb-hero__actions">
             <a class="wb-btn wb-btn--primary" href="/workbuddy-guide/bluebook/">
               开始阅读
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
             </a>
             <a class="wb-btn wb-btn--ghost" href="/workbuddy-guide/attributions">版权与署名</a>
           </div>
@@ -59,7 +59,7 @@
           <span><b>官方改写</b><small>OFFICIAL-BASED</small></span>
         </div>
         <div class="wb-value">
-          <span class="wb-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5" /><rect x="14" y="3" width="7" height="7" rx="1.5" /><rect x="3" y="14" width="7" height="7" rx="1.5" /><rect x="14" y="14" width="7" height="7" rx="1.5" /></svg></span>
+          <span class="wb-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" /><rect x="3" y="14" width="7" height="7" /><rect x="14" y="14" width="7" height="7" /></svg></span>
           <span><b>系统沉淀</b><small>WORK SYSTEM</small></span>
         </div>
       </div>
@@ -85,7 +85,7 @@
         </a>
 
         <a class="wb-card" href="/workbuddy-guide/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/">
-          <span class="wb-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /></svg></span>
+          <span class="wb-card__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" /><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /></svg></span>
           <span class="wb-card__body">
             <small>PART 02 · CH. 12—22</small>
             <strong>进入真实案例：让任务开始流动</strong>
@@ -126,7 +126,7 @@
 
       <div class="wb-tasks">
         <a class="wb-task" href="/workbuddy-guide/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/">
-          <span class="wb-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /></svg></span>
+          <span class="wb-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" /><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /></svg></span>
           <strong>办公文档</strong><span>Word · Excel · PPT</span>
         </a>
         <a class="wb-task" href="/workbuddy-guide/bluebook/第二篇%20案例篇：从一项任务到一支%20AI%20团队/">
@@ -138,7 +138,7 @@
           <strong>资讯与知识</strong><span>收集 · 筛选 · 复用</span>
         </a>
         <a class="wb-task" href="/workbuddy-guide/bluebook/第三篇%20进阶篇：把案例变成自己的工作系统/">
-          <span class="wb-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" rx="2" /><path d="M12 7V4M9 13h.01M15 13h.01M9 16h6" /></svg></span>
+          <span class="wb-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="7" width="14" height="12" /><path d="M12 7V4M9 13h.01M15 13h.01M9 16h6" /></svg></span>
           <strong>AI 工作系统</strong><span>Skill · Agent · 自动化</span>
         </a>
       </div>
