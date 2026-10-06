@@ -1,0 +1,27 @@
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+.wrangler/
+.dev.vars*
+!.dev.vars.example
+.env*
+
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+docs/.vitepress/.temp/
+
+# Keep implementation plans local; publish only product code and content.
+docs/plans/
+
+# Keep the lossless Feishu export locally, but publish only reader-facing pages.
+docs/bluebook/**/source.md
+docs/bluebook/**/source.xml
+docs/bluebook/**/metadata.json
+docs/bluebook/manifest.json
+
+# VitePress build cache
+docs/.vitepress/*.timestamp-*.mjs
+
+# VitePress build cache
+docs/.vitepress/*.timestamp-*.mjs

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sili021yan-ai.github.io/workbuddy-guide/sitemap.xml
