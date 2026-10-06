@@ -8,7 +8,7 @@
 - 许可：**MIT License**，原作者保留其版权声明，见根目录 `LICENSE`。
 
 ## 2. 教程正文内容
-- 作者：sili021yan-ai（© 2026 保留所有权利，见 `CONTENT_LICENSE.md`）。
+- 作者：sil1021yan-ai（© 2026 保留所有权利，见 `CONTENT_LICENSE.md`）。
 - 以 WorkBuddy 官方指南为基础独立改写，非官方文档原文。
 
 ## 3. 官方文档来源

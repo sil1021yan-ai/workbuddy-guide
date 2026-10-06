@@ -6,7 +6,7 @@ import { createPageDescription, createSeoHead } from "./seo";
 
 const siteUrl =
   process.env.VITEPRESS_SITE_URL ||
-  "https://sili021yan-ai.github.io/workbuddy-guide";
+  "https://sil1021yan-ai.github.io/workbuddy-guide";
 
 export default defineConfig({
   base: "/workbuddy-guide/",
@@ -30,7 +30,7 @@ export default defineConfig({
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
     ["meta", { name: "theme-color", content: "#d8f238" }],
-    ["meta", { name: "author", content: "sili021yan-ai" }],
+    ["meta", { name: "author", content: "sil1021yan-ai" }],
     [
       "meta",
       {
@@ -70,7 +70,7 @@ export default defineConfig({
     ],
     sidebar: siteSidebar,
     socialLinks: [
-      { icon: "github", link: "https://github.com/sili021yan-ai/workbuddy-guide" },
+      { icon: "github", link: "https://github.com/sil1021yan-ai/workbuddy-guide" },
     ],
     search: {
       provider: "local",
@@ -92,13 +92,13 @@ export default defineConfig({
     },
     editLink: {
       pattern:
-        "https://github.com/sili021yan-ai/workbuddy-guide/edit/main/docs/:path",
+        "https://github.com/sil1021yan-ai/workbuddy-guide/edit/main/docs/:path",
       text: "在 GitHub 上改进此页",
     },
     footer: {
       message:
-        "本站为第三方非官方整理 · 代码基于 WorkBuddyGuide（MIT）· 教程内容 © sili021yan-ai 保留所有权利",
-      copyright: "Copyright © 2026 sili021yan-ai",
+        "本站为第三方非官方整理 · 代码基于 WorkBuddyGuide（MIT）· 教程内容 © sil1021yan-ai 保留所有权利",
+      copyright: "Copyright © 2026 sil1021yan-ai",
     },
   },
 });

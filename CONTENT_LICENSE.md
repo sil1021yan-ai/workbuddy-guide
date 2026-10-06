@@ -1,6 +1,6 @@
 # 版权声明（教程内容）
 
-© 2026 sili021yan-ai. 保留所有权利（All Rights Reserved）。
+© 2026 sil1021yan-ai. 保留所有权利（All Rights Reserved）。
 
 本仓库 `docs/bluebook/` 目录下的全部教程正文（Markdown 内容）由作者基于
 WorkBuddy 官方指南独立编写、整理、改写成"小白任务路径"，**版权归作者所有**。

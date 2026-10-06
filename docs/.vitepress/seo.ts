@@ -5,8 +5,8 @@ import type { HeadConfig, PageData, TransformContext } from "vitepress";
 
 const SITE_NAME = "WorkBuddy 小白实战指南";
 const SITE_ALTERNATE_NAME = "WorkBuddy Guide";
-const ORGANIZATION_NAME = "sili021yan-ai";
-const GITHUB_URL = "https://github.com/sili021yan-ai/workbuddy-guide";
+const ORGANIZATION_NAME = "sil1021yan-ai";
+const GITHUB_URL = "https://github.com/sil1021yan-ai/workbuddy-guide";
 const DEFAULT_DESCRIPTION =
   "以真实任务为主线的 WorkBuddy 中文使用手册：从安装入门到 AI 工作系统。";
 

@@ -7,7 +7,7 @@ title: 版权与署名
 本网站是 WorkBuddy 的**第三方非官方**小白实战指南。以下为权属与来源说明。
 
 ## 1. 教程正文内容
-- 作者：**sili021yan-ai**（© 2026 保留所有权利，**All Rights Reserved**）。
+- 作者：**sil1021yan-ai**（© 2026 保留所有权利，**All Rights Reserved**）。
 - 以 WorkBuddy 官方指南为基础独立改写，非官方文档原文。
 - 未经书面许可，禁止以任何形式复制、转载、摘编、传播本教程正文内容用于商业用途。
 - 详细条款见仓库根目录 `CONTENT_LICENSE.md`。
