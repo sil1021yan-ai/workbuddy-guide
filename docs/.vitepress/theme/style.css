@@ -398,9 +398,29 @@
   text-decoration: none;
 }
 
-/* Hero 明信片 */
+/* Hero 明信片：整张可点，hover 上浮 */
 .wb-postcard {
   position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.22s ease;
+}
+
+.wb-postcard:hover {
+  transform: translateY(-4px);
+}
+
+/* 压过默认主题的 .vp-doc a（0,1,1），否则整张明信片文字会被染成品牌色 */
+.wb-home a.wb-postcard,
+.wb-home a.wb-postcard:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wb-home a.wb-postcard:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 .wb-postcard__glow {
@@ -419,6 +439,20 @@
   border: 1px solid var(--wb-border);
   padding: 0.75rem;
   box-shadow: 0 36px 70px -40px rgba(42, 32, 24, 0.5);
+  transition: box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.wb-postcard:hover figure {
+  border-color: rgba(194, 87, 27, 0.4);
+  box-shadow: 0 44px 82px -40px rgba(42, 32, 24, 0.6);
+}
+
+.wb-postcard__cap h2 {
+  transition: color 0.18s ease;
+}
+
+.wb-postcard:hover .wb-postcard__cap h2 {
+  color: var(--wb-accent);
 }
 
 .wb-postcard__scene {

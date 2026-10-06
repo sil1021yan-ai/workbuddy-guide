@@ -37,8 +37,12 @@
           </div>
         </div>
 
-        <!-- 明信片 -->
-        <div class="wb-postcard" aria-label="指南概览">
+        <!-- 明信片 → 跳转第一章 -->
+        <a
+          class="wb-postcard"
+          href="/workbuddy-guide/bluebook/第一篇%20使用手册：先把%20WorkBuddy%20用起来/第%201%20章%20初识%20WorkBuddy/"
+          aria-label="阅读第一章：初识 WorkBuddy"
+        >
           <div class="wb-postcard__glow" aria-hidden="true" />
           <figure>
             <div class="wb-postcard__scene">
@@ -96,7 +100,7 @@
               </div>
             </figcaption>
           </figure>
-        </div>
+        </a>
       </div>
 
       <!-- 价值条 -->
@@ -318,15 +322,15 @@
           </a>
           <a
             class="wb-news__btn"
-            href="https://github.com/sil1021yan-ai/workbuddy-guide/stargazers"
+            href="https://github.com/sil1021yan-ai/workbuddy-guide/subscription"
             target="_blank"
             rel="noreferrer"
           >
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z" /><circle cx="12" cy="12" r="2.8" /></svg>
-            Watch 更新
+            关注更新
           </a>
           <p class="wb-news__note">
-            Star 或 Watch 后，仓库有新提交与新 Issue 时你会收到 GitHub 通知。
+            先 Star，再在上方按钮打开的页面里选择通知方式，之后仓库有新提交与新 Issue 时你就会收到提醒。
           </p>
         </div>
       </div>
