@@ -5,9 +5,8 @@
 一个以真实任务为主线的 WorkBuddy 中文使用手册。从下载安装和第一个任务开始，
 再到 Skill、连接器、自动化与多智能体，最终把一次成功沉淀为可复用的工作系统。
 
-本仓库由 [AlephAITech/WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide)
-（MIT）的 VitePress 脚手架改造而来，**代码保留 MIT 许可与原作者署名**；
-**教程正文为作者原创改写，版权归作者所有（All Rights Reserved）**。详见
+本仓库的网站代码（VitePress 主题、组件、配置）由作者从零搭建，**采用 MIT 许可，
+版权 © 2026 sil1021yan-ai**；**教程正文为作者原创改写，版权归作者所有（All Rights Reserved）**。详见
 [ATTRIBUTIONS.md](./ATTRIBUTIONS.md) 与 [CONTENT_LICENSE.md](./CONTENT_LICENSE.md)。
 
 ## 技术栈
@@ -30,5 +29,5 @@ npm run docs:build    # 构建到 docs/.vitepress/dist
 
 ## 版权
 - 教程正文：© 作者，All Rights Reserved（见 `CONTENT_LICENSE.md`）。
-- 网站代码：MIT，原作者 AlephAITech（见 `LICENSE`）。
+- 网站代码：MIT，© 2026 sil1021yan-ai（见 `LICENSE`）。
 - 官方文档版权归腾讯，本指南仅作学习整理，非官方作品。

@@ -13,9 +13,8 @@ title: 版权与署名
 - 详细条款见仓库根目录 `CONTENT_LICENSE.md`。
 
 ## 2. 网站代码（VitePress 主题 / 组件 / 配置）
-- 基于 [AlephAITech/WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide) 的
-  VitePress 脚手架改造。
-- 许可：**MIT License**，原作者保留其版权声明，见根目录 `LICENSE`。
+- 由本仓库作者（sil1021yan-ai）从零搭建的 VitePress 主题、组件与配置。
+- 许可：**MIT License**，版权 © 2026 sil1021yan-ai，见根目录 `LICENSE`。
 
 ## 3. 官方文档来源
 - WorkBuddy 官方指南：https://www.workbuddy.cn/docs/workbuddy/

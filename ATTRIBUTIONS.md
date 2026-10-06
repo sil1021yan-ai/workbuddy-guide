@@ -3,9 +3,8 @@
 本项目是 WorkBuddy 的第三方非官方小白实战指南。以下为权属与来源说明。
 
 ## 1. 网站代码（VitePress 主题 / 组件 / 配置）
-- 来源：基于 [AlephAITech/WorkBuddyGuide](https://github.com/AlephAITech/WorkBuddyGuide)
-  的 VitePress 脚手架改造。
-- 许可：**MIT License**，原作者保留其版权声明，见根目录 `LICENSE`。
+- 来源：由本仓库作者（sil1021yan-ai）从零搭建的 VitePress 主题、组件与配置。
+- 许可：**MIT License**，版权 © 2026 sil1021yan-ai，见根目录 `LICENSE`。
 
 ## 2. 教程正文内容
 - 作者：sil1021yan-ai（© 2026 保留所有权利，见 `CONTENT_LICENSE.md`）。

@@ -1,9 +1,7 @@
-import { defineAsyncComponent, h } from "vue";
+import { h } from "vue";
 import DefaultTheme from "vitepress/theme-without-fonts";
 import HomePage from "./components/HomePage.vue";
-import ImageLightbox from "./components/ImageLightbox.vue";
 
-import "./fonts.css";
 import "./style.css";
 
 const scrollActiveSidebarItemIntoView = () => {
@@ -39,16 +37,9 @@ const scrollActiveSidebarItemIntoView = () => {
 
 export default {
   extends: DefaultTheme,
-  Layout: () =>
-    h(DefaultTheme.Layout, null, {
-      "layout-bottom": () => h(ImageLightbox),
-    }),
+  Layout: DefaultTheme.Layout,
   enhanceApp({ app, router }) {
     app.component("HomePage", HomePage);
-    app.component(
-      "MermaidDiagram",
-      defineAsyncComponent(() => import("./components/MermaidDiagram.vue")),
-    );
 
     if (typeof window !== "undefined") {
       const previousAfterRouteChange = router.onAfterRouteChange;

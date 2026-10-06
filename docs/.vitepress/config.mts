@@ -1,7 +1,6 @@
 import { defineConfig } from "vitepress";
 
 import { siteSidebar } from "./sidebar";
-import { configureMermaidMarkdown } from "./mermaid-markdown";
 import { createPageDescription, createSeoHead } from "./seo";
 
 const siteUrl =
@@ -29,7 +28,7 @@ export default defineConfig({
   transformHead: (context) => createSeoHead(siteUrl, context),
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
-    ["meta", { name: "theme-color", content: "#d8f238" }],
+    ["meta", { name: "theme-color", content: "#4f46e5" }],
     ["meta", { name: "author", content: "sil1021yan-ai" }],
     [
       "meta",
@@ -52,7 +51,6 @@ export default defineConfig({
     ],
   ],
   markdown: {
-    config: configureMermaidMarkdown,
     image: {
       lazyLoading: true,
     },
@@ -97,7 +95,7 @@ export default defineConfig({
     },
     footer: {
       message:
-        "本站为第三方非官方整理 · 代码基于 WorkBuddyGuide（MIT）· 教程内容 © sil1021yan-ai 保留所有权利",
+        "本站为第三方非官方整理 · 教程内容 © sil1021yan-ai 保留所有权利",
       copyright: "Copyright © 2026 sil1021yan-ai",
     },
   },
