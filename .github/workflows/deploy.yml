@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: npm run docs:build
         env:
-          VITEPRESS_SITE_URL: https://sili021yan-ai.github.io/workbuddy-guide
+          VITEPRESS_SITE_URL: https://sil1021yan-ai.github.io/workbuddy-guide
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
