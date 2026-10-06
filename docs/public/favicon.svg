@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="WorkBuddy Guide">
-  <rect width="64" height="64" fill="#0a0a0a"/>
-  <path fill="#ff3366" d="M14 15h7v23h7V22h7v16h7V15h7v30h-7v6H14z"/>
-  <path fill="#fff" d="M21 44h14v7H21z"/>
+  <rect width="64" height="64" rx="6" fill="#c2571b"/>
+  <path fill="#f6f1e7" d="M14 15h7v23h7V22h7v16h7V15h7v30h-7v6H14z"/>
+  <path fill="#2a2018" d="M21 44h14v7H21z"/>
 </svg>
