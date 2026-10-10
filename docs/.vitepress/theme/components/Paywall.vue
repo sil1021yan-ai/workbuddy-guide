@@ -39,7 +39,7 @@ const isBanner = computed(() => props.variant === "banner");
     </div>
 
     <p class="wb-pay__lead">
-      你刚才看到的是本章的<b>思路框架</b>（五问定标 + 先选对 Skill）。付费完整版还包含：
+      你刚才看到的是本章的<b>思路框架</b>。付费完整版还包含：
     </p>
 
     <ul class="wb-pay__list">
