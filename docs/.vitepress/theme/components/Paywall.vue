@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from "vue";
-import wechatImg from "../assets/wechat-wikiai-yan.png";
+import qrImg from "../assets/wechat-qr-yan.jpg";
 
 const props = defineProps({
   // 2 / 3 / 4 —— 当前所属篇，用于展示对应单买价
@@ -24,8 +24,7 @@ const isBanner = computed(() => props.variant === "banner");
   <div v-if="isBanner" class="wb-pay wb-pay--banner">
     <span class="wb-pay__badge">试读版</span>
     <span class="wb-pay__banner-text">
-      本篇为试读内容，完整版（含全部真实提示词、执行步骤表、验收标准）为付费
-      PDF。
+      本篇为试读内容，完整版（含全部真实提示词、执行步骤表、验收标准）为付费飞书文档，密码解锁后在线阅读。
     </span>
     <a class="wb-pay__banner-link" href="/workbuddy-guide/bluebook/购买指南/">
       查看定价与购买方式 →
@@ -36,7 +35,7 @@ const isBanner = computed(() => props.variant === "banner");
   <div v-else class="wb-pay">
     <div class="wb-pay__head">
       <span class="wb-pay__badge">试读到此结束</span>
-      <span class="wb-pay__title">完整版为付费 PDF</span>
+      <span class="wb-pay__title">完整版 · 飞书付费文档（密码解锁）</span>
     </div>
 
     <p class="wb-pay__lead">
@@ -48,7 +47,7 @@ const isBanner = computed(() => props.variant === "banner");
       <li><b>执行步骤表</b>：AI 做什么、你要确认什么</li>
       <li><b>实际效果 + 验收标准</b>：怎么判断"做完了、做对了"</li>
       <li><b>零成本 Skill 固化示范</b>：把这类活变成你的专属技能</li>
-      <li>后续<b>更新与勘误</b>，买断后持续生效</li>
+      <li><b>买断后免费更新</b>：修订直接发生在飞书文档里，打开永远是最新版</li>
     </ul>
 
     <div class="wb-pay__pricing">
@@ -69,22 +68,23 @@ const isBanner = computed(() => props.variant === "banner");
     <div class="wb-pay__buy">
       <img
         class="wb-pay__wechat-img"
-        :src="wechatImg"
-        alt="微信号 Wikiai_Yan，备注 WorkBuddy 指南"
+        :src="qrImg"
+        alt="微信二维码，扫码添加 Yan，备注 WorkBuddy 指南"
         loading="lazy"
       />
       <div class="wb-pay__buy-steps">
         <p><b>购买流程（1 分钟）：</b></p>
         <ol>
-          <li>微信扫描/识别上方图片添加好友（或搜索 <code>Wikiai_Yan</code>）；</li>
+          <li>微信扫描/识别上方二维码添加好友（或搜索 <code>Wikiai_Yan</code>）；</li>
           <li>备注「WorkBuddy 指南」并告诉我要哪一篇；</li>
-          <li>微信转账对应金额 → 收到带专属水印的完整 PDF。</li>
+          <li>微信转账对应金额 → 我把<b>飞书文档链接 + 访问密码</b>发给你，打开链接输入密码即可在线阅读完整版（手机、电脑都能看，无需注册飞书）。</li>
         </ol>
       </div>
     </div>
 
     <p class="wb-pay__note">
-      已购过一篇想升级？同样加微信报「已购第 X 篇」，按上表补差价即可。
+      已购过一篇想升级？同样加微信报「已购第 X 篇」，按上表补差价即可，升级内容 =
+      新一篇的链接和密码。
       更多细节见<a href="/workbuddy-guide/bluebook/购买指南/">购买指南</a>。
     </p>
   </div>
@@ -186,7 +186,7 @@ const isBanner = computed(() => props.variant === "banner");
 }
 
 .wb-pay__wechat-img {
-  width: 260px;
+  width: 220px;
   max-width: 100%;
   border-radius: 10px;
   border: 1px solid var(--wb-border);
