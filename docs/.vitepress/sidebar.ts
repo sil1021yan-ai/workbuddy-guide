@@ -26,6 +26,7 @@ const child = (
 export const bluebookSidebar: DefaultTheme.Sidebar = {
   "/bluebook/": [
     { text: "小白指南总览", link: "/bluebook/" },
+    { text: "🛒 购买指南（定价/补差）", link: "/bluebook/购买指南/" },
     {
       text: "第一篇 · 使用手册",
       collapsed: false,

@@ -1,6 +1,8 @@
 import { h } from "vue";
 import DefaultTheme from "vitepress/theme-without-fonts";
 import HomePage from "./components/HomePage.vue";
+import Paywall from "./components/Paywall.vue";
+import WechatCard from "./components/WechatCard.vue";
 
 import "./style.css";
 
@@ -40,6 +42,8 @@ export default {
   Layout: DefaultTheme.Layout,
   enhanceApp({ app, router }) {
     app.component("HomePage", HomePage);
+    app.component("Paywall", Paywall);
+    app.component("WechatCard", WechatCard);
 
     if (typeof window !== "undefined") {
       const previousAfterRouteChange = router.onAfterRouteChange;

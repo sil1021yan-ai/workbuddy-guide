@@ -64,6 +64,7 @@ export default defineConfig({
     nav: [
       { text: "首页", link: "/" },
       { text: "开始阅读", link: "/bluebook/" },
+      { text: "购买指南", link: "/bluebook/购买指南/" },
       { text: "版权与署名", link: "/attributions" },
     ],
     sidebar: siteSidebar,
