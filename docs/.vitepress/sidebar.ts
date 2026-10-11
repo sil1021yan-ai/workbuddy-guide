@@ -91,6 +91,7 @@ export const bluebookSidebar: DefaultTheme.Sidebar = {
         item(appendix, "附录导读"),
         child(appendix, "附录 A 常用指令模板"),
         child(appendix, "附录 B 场景速查表"),
+        child(appendix, "附录 C 小白说明书速查表"),
       ],
     },
   ],

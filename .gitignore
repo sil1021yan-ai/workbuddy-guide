@@ -29,3 +29,6 @@ docs/.vitepress/*.timestamp-*.mjs
 # 付费内容源（完整版章节文本，用于生成付费 PDF）
 # 绝不能提交：本仓库是公开仓库，付费内容必须留在本地。
 paid-content/
+
+# 术语抽取临时产物（可由scripts/extract_terms.py 重新生成）
+scripts/_xiaobai_terms.json

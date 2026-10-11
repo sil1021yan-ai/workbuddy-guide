@@ -5,7 +5,7 @@ import qrImg from "../assets/wechat-qr-yan.jpg";
 const props = defineProps({
   // 2 / 3 / 4 —— 当前所属篇，用于展示对应单买价
   part: { type: String, default: "2" },
-  // banner = 页首紧凑提示条；card = 正文切分处的完整购买卡
+  // banner = 页首紧凑提示条；card = 正文切分处的完整购买卡；note = 轻量提示（附录/术语表用）
   variant: { type: String, default: "card" },
 });
 
@@ -17,6 +17,7 @@ const PRICE = {
 
 const current = computed(() => PRICE[props.part] ?? PRICE["2"]);
 const isBanner = computed(() => props.variant === "banner");
+const isNote = computed(() => props.variant === "note");
 </script>
 
 <template>
@@ -29,6 +30,30 @@ const isBanner = computed(() => props.variant === "banner");
     <a class="wb-pay__banner-link" href="/workbuddy-guide/bluebook/购买指南/">
       查看定价与购买方式 →
     </a>
+  </div>
+
+  <!-- 轻量提示（附录/术语表等非章节型页面用） -->
+  <div v-else-if="isNote" class="wb-pay wb-pay--note">
+    <p class="wb-pay__note-lead">
+      <b>完整版包含 96 个术语</b>，按主题分组、带字母索引，另附界面菜单、安装账号、
+      小程序与IM 助理、自动化可靠性四组，以及跨章操作要点六条通则与第二～四篇的付费术语。
+    </p>
+    <p class="wb-pay__note-price">
+      随<b>第二篇 ¥9.9</b> 起售，已购第三篇可补 ¥10 一并解锁
+      <span class="wb-pay__note-tag">飞书文档 · 密码解锁 · 买断后免费更新</span>
+    </p>
+    <div class="wb-pay__note-buy">
+      <img
+        class="wb-pay__wechat-img wb-pay__wechat-img--sm"
+        :src="qrImg"
+        alt="微信二维码，扫码添加 Yan，备注 WorkBuddy 指南"
+        loading="lazy"
+      />
+      <p class="wb-pay__note-step">
+        扫码加微信（或搜 <code>Wikiai_Yan</code>）→ 备注「速查表」→ 转账 → 收到飞书文档链接 + 访问密码，打开输入即可阅读。
+        <a href="/workbuddy-guide/bluebook/购买指南/">查看全部定价 →</a>
+      </p>
+    </div>
   </div>
 
   <!-- 正文切分处完整购买卡 -->
@@ -221,6 +246,63 @@ const isBanner = computed(() => props.variant === "banner");
 
 .wb-pay__note a,
 .wb-pay__banner-link {
+  color: var(--wb-accent);
+  font-weight: 600;
+}
+
+/* 轻量提示（附录型页面） */
+.wb-pay--note {
+  background: var(--wb-bg-alt);
+  border-style: dashed;
+  padding: 16px 20px;
+}
+
+.wb-pay__note-lead {
+  margin: 0 0 8px;
+  color: var(--wb-body);
+  font-size: 14.5px;
+}
+
+.wb-pay__note-price {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: var(--wb-ink);
+}
+
+.wb-pay__note-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--wb-accent);
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.wb-pay__note-buy {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.wb-pay__wechat-img--sm {
+  width: 150px;
+}
+
+.wb-pay__note-step {
+  flex: 1;
+  min-width: 200px;
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--wb-body);
+  line-height: 1.75;
+}
+
+.wb-pay__note-step a {
+  display: inline-block;
+  margin-top: 4px;
   color: var(--wb-accent);
   font-weight: 600;
 }
