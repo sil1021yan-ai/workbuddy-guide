@@ -1,4 +1,4 @@
-# WorkBuddy 小白实战指南
+# 小白 AI 办公实战指南（WorkBuddy 版）
 
 > 第三方非官方 · 基于 WorkBuddy 官方指南改写 · © 作者保留所有权利
 

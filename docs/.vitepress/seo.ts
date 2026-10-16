@@ -3,8 +3,8 @@ import { resolve } from "node:path";
 
 import type { HeadConfig, PageData, TransformContext } from "vitepress";
 
-const SITE_NAME = "WorkBuddy 小白实战指南";
-const SITE_ALTERNATE_NAME = "WorkBuddy Guide";
+const SITE_NAME = "小白 AI 办公实战指南（WorkBuddy 版）";
+const SITE_ALTERNATE_NAME = "小白 AI 办公实战指南";
 const ORGANIZATION_NAME = "sil1021yan-ai";
 const GITHUB_URL = "https://github.com/sil1021yan-ai/workbuddy-guide";
 const DEFAULT_DESCRIPTION =
@@ -134,7 +134,7 @@ function breadcrumbName(segment: string): string {
   }
 
   const labels: Record<string, string> = {
-    bluebook: "WorkBuddy 小白实战指南",
+    bluebook: "小白 AI 办公实战指南（WorkBuddy 版）",
     attributions: "版权与署名",
   };
 
@@ -305,12 +305,12 @@ export function createSeoHead(
     ["meta", { property: "og:image:type", content: "image/png" }],
     ["meta", { property: "og:image:width", content: "1280" }],
     ["meta", { property: "og:image:height", content: "720" }],
-    ["meta", { property: "og:image:alt", content: "WorkBuddy 小白指南首页预览" }],
+    ["meta", { property: "og:image:alt", content: "小白 AI 办公实战指南首页预览" }],
     ["meta", { name: "twitter:card", content: "summary_large_image" }],
     ["meta", { name: "twitter:title", content: title }],
     ["meta", { name: "twitter:description", content: description }],
     ["meta", { name: "twitter:image", content: socialImageUrl }],
-    ["meta", { name: "twitter:image:alt", content: "WorkBuddy 小白指南首页预览" }],
+    ["meta", { name: "twitter:image:alt", content: "小白 AI 办公实战指南首页预览" }],
     [
       "script",
       { type: "application/ld+json" },

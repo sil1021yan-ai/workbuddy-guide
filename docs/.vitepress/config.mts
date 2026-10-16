@@ -10,8 +10,8 @@ const siteUrl =
 export default defineConfig({
   base: "/workbuddy-guide/",
   lang: "zh-CN",
-  title: "WorkBuddy 小白实战指南",
-  titleTemplate: ":title · WorkBuddy 小白实战指南",
+  title: "小白 AI 办公实战指南（WorkBuddy 版）",
+  titleTemplate: ":title · 小白 AI 办公实战指南",
   description:
     "以真实任务为主线的 WorkBuddy 中文使用手册：从安装入门到 AI 工作系统。",
   cleanUrls: true,
@@ -60,7 +60,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
-    siteTitle: "WorkBuddy Guide",
+    siteTitle: "小白 AI 办公实战指南",
     nav: [
       { text: "首页", link: "/" },
       { text: "开始阅读", link: "/bluebook/" },

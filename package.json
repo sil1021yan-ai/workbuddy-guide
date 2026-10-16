@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "WorkBuddy 小白实战指南：从安装使用到 AI 工作系统（第三方非官方）",
+  "description": "小白 AI 办公实战指南（WorkBuddy 版）：从安装使用到 AI 工作系统（第三方非官方）",
   "engines": {
     "node": ">=20 <25"
   },

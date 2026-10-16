@@ -14,7 +14,7 @@ BASE = os.path.join(
 PARTS = [
     {
         "out": "_feishu/part3.md",
-        "title": "WorkBuddy 小白实战指南 · 第三篇 进阶篇：把案例变成自己的工作系统（完整版）",
+        "title": "小白 AI 办公实战指南（WorkBuddy 版） · 第三篇 进阶篇：把案例变成自己的工作系统（完整版）",
         "src": "第三篇-完整版",
         "chapters": [
             "第 22 章 打造 Skill：将书和视频蒸馏为可执行 Skill",
@@ -25,7 +25,7 @@ PARTS = [
     },
     {
         "out": "_feishu/part4.md",
-        "title": "WorkBuddy 小白实战指南 · 第四篇 岗位与行业落地（完整版）",
+        "title": "小白 AI 办公实战指南（WorkBuddy 版） · 第四篇 岗位与行业落地（完整版）",
         "src": "第四篇-完整版",
         "chapters": [
             "第 26 章 岗位路线图：不同岗位如何把 WorkBuddy 用深",
